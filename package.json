@@ -1,0 +1,11 @@
+{
+    "name": "com.kazegames.kazerutility",
+    "version": "1.0.0",
+    "displayName": "Kazegames Utility",
+    "unity": "2020.3",
+    
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/windcheong/KazerUtility.git"
+    }
+ }
