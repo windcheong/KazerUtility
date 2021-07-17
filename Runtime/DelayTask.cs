@@ -4,8 +4,8 @@ using System.Collections;
 
 namespace Kazegames.Utility
 {
-    [AddComponentMenu(Globals.MENU + "Delay Action")]
-    public class DelayAction : MonoBehaviour
+    [AddComponentMenu(Globals.MENU + "Delay Task")]
+    public class DelayTask : MonoBehaviour
     {
         [SerializeField] float delayTime;
 

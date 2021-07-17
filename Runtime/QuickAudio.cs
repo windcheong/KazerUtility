@@ -7,7 +7,7 @@ namespace Kazegames.Utility
     [AddComponentMenu(Globals.MENU + "Quick Audio")]
     public class QuickAudio : MonoBehaviour
     {
-        public void Play(AudioClip clip)
+        public void PlayOneShot(AudioClip clip)
         {
             AudioSource src = GetComponent<AudioSource>();
             
