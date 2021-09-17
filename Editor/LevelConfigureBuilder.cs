@@ -11,6 +11,14 @@ namespace Kazegames.Editor
     {
         public int callbackOrder { get { return 0; } }
 
+        [MenuItem("Kazegames/Build Levels")]
+        private static void BuildLevels()
+        {
+            LevelConfigure config = Resources.Load<LevelConfigure>("Level Configure");
+
+            config.Build();
+        }
+
         public void OnPreprocessBuild(BuildReport report)
         {
             if (EditorUtility.DisplayDialog("Did you use LevelConfigure ?", "", "Yes", "No"))
