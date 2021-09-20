@@ -12,6 +12,7 @@ namespace Kazegames.Editor
     {
         SerializedProperty _spStartupScenes;
         SerializedProperty _spLevelScenes;
+        SerializedProperty _spGameLevels;
 
         public int callbackOrder { get { return 0; } }
 
@@ -19,6 +20,7 @@ namespace Kazegames.Editor
         {
             _spStartupScenes = serializedObject.FindProperty("startupScenes");
             _spLevelScenes = serializedObject.FindProperty("levelScenes");
+            _spGameLevels = serializedObject.FindProperty("gameLevels");
         }
 
         public override void OnInspectorGUI()
@@ -27,6 +29,10 @@ namespace Kazegames.Editor
 
             EditorGUILayout.PropertyField(_spStartupScenes);
             EditorGUILayout.PropertyField(_spLevelScenes);
+            
+            GUI.enabled = false;
+            EditorGUILayout.PropertyField(_spGameLevels);
+            GUI.enabled = true;
 
             serializedObject.ApplyModifiedProperties();
 
@@ -62,7 +68,7 @@ namespace Kazegames.Editor
                     string path = AssetDatabase.GetAssetPath(s);
                     string guid = AssetDatabase.AssetPathToGUID(path);
 
-                    buildingList.Add(new EditorBuildSettingsScene(guid, true));
+                    buildingList.Add(new EditorBuildSettingsScene(path, true));
 
                     Debug.Log($"added scene({s.name}): {path}");
                 }
@@ -75,7 +81,7 @@ namespace Kazegames.Editor
                     string path = AssetDatabase.GetAssetPath(s);
                     string guid = AssetDatabase.AssetPathToGUID(path);
 
-                    buildingList.Add(new EditorBuildSettingsScene(guid, true));
+                    buildingList.Add(new EditorBuildSettingsScene(path, true));
 
                     Debug.Log($"added scene({s.name}): {path}");
                 }

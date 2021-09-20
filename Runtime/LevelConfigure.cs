@@ -44,8 +44,8 @@ namespace Kazegames.Utility
         [System.Serializable]
         public class GameLevel
         {
-            [SerializeField] string guid;
             [SerializeField] string name;
+            [SerializeField] string guid;
             [SerializeField] int buildIndex;
 
             public string GUID
