@@ -36,6 +36,8 @@ namespace Kazegames.Utility
 
                 Debug.Log($"build level({level.Name}, {level.BuildIndex}): {path}");
             }
+
+            Debug.LogWarning("building done");
         }
 #endif
 

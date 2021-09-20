@@ -85,6 +85,9 @@ namespace Kazegames.Editor
 
             // build level configure
             config.Build();
+
+            EditorUtility.SetDirty(config);
+            AssetDatabase.SaveAssets();
         }
 
         public void OnPreprocessBuild(BuildReport report)
