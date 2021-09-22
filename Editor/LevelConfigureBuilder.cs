@@ -98,7 +98,7 @@ namespace Kazegames.Editor
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            if (EditorUtility.DisplayDialog("Did you use LevelConfigure ?", "", "Yes", "No"))
+            if (EditorUtility.DisplayDialog("Level Configure Builder", "Did you use LevelConfigure?", "Yes", "No"))
             {
                 LevelConfigure config = Resources.Load<LevelConfigure>("Level Configure");
 
