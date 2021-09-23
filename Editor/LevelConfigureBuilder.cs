@@ -44,7 +44,8 @@ namespace Kazegames.Editor
 
                 if (config == null)
                 {
-                    if (EditorUtility.DisplayDialog("Error: Not found the LevelConfigure file", "You should create a LevelConfigure file named \"Level Configure\" in UNITY Resources folder", "Cancel"))
+                    if (EditorUtility.DisplayDialog("Error", "Not found the LevelConfigure file," +
+                        "\nYou should create a LevelConfigure file named \"Level Configure\" in UNITY Resources folder", "Cancel"))
                     {
                         return;
                     }
