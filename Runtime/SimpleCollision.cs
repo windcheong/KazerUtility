@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Kazegames.Utility
+namespace Kazegames
 {
     [AddComponentMenu(Globals.MENU + "Simple Collision")]
     public class SimpleCollision : MonoBehaviour

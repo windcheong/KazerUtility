@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
-using Kazegames.Utility;
 using System.Collections.Generic;
 
 namespace Kazegames.Editor

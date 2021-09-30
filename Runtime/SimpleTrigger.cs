@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Kazegames.Utility
+namespace Kazegames
 {
     [AddComponentMenu(Globals.MENU + "Simple Trigger")]
     public class SimpleTrigger : MonoBehaviour

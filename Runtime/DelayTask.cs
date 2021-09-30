@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 
-namespace Kazegames.Utility
+namespace Kazegames
 {
     [AddComponentMenu(Globals.MENU + "Delay Task")]
     public class DelayTask : MonoBehaviour

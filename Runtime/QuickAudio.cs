@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Kazegames.Utility
+namespace Kazegames
 {
     [AddComponentMenu(Globals.MENU + "Quick Audio")]
     public class QuickAudio : MonoBehaviour

@@ -1,6 +1,6 @@
 {
     "name": "Kazegames.Utility",
-    "rootNamespace": "Kazegames.Utility",
+    "rootNamespace": "Kazegames",
     "references": [],
     "includePlatforms": [
         "Android",

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 #endif
 
-namespace Kazegames.Utility
+namespace Kazegames
 {
     [CreateAssetMenu(fileName ="New Level Configure", menuName ="Kazegames/Level Configure")]
     public class LevelConfigure : ScriptableObject

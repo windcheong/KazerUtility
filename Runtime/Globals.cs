@@ -1,5 +1,5 @@
 
-namespace Kazegames.Utility
+namespace Kazegames
 {
     internal static class Globals
     {
